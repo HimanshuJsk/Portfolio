@@ -1,0 +1,88 @@
+Home
+About
+Menu
+Contact
+
+Home Page
++++++++++++++++++++++++++++++++++++++++++++
+Home Page First Section:-
+1. Photo
+2. Detail
+
+Home Page Second Section:-
+1. Resume
+2. Detail
+
+Home Page Third Section:-
+1. My Experience:-
+Krishasales.vercel.app
+
+2. My Education:-
+Bachelor of Computer Graphics
+Master
+
+Home Page Fourth Section:-
+All Skills:-
+Html, Css, Js, Angular js, PHP, Mysql, .net
+
+Home Page Fifth Section:-
+Testimonial
++++++++++++++++++++++++++++++++++++++++++++
+
+About Page
++++++++++++++++++++++++++++++++++++++++++++
+About Page First Section:-
+1. Responsive Design
+2. Powerful editor
+3. Creative Design
+
+About Page Second Section:-
+1. ui / ux Design 
+2. ideas & technology
+3. Branding design
+
+About Page Third Section:-
+1. Subscribe Block
++++++++++++++++++++++++++++++++++++++++++++
+
+Menu Page
++++++++++++++++++++++++++++++++++++++++++++
+Menu Page First Section:-
+1. Student Enquiry Form
+
+Menu Page Second Section:-
+1. ui / ux Design 
+2. ideas & technology
+3. Front - end developer
+4. Back - end developer
++++++++++++++++++++++++++++++++++++++++++++
+
+Contact Page
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Contact Page First Section:-
+1. Address, Mail id, Mobileno, Social media
+2. Form:- Name, Email, Subject, Message, Send Message(Button)
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Form
+Sign up Form:-
+Surname
+First name
+Last name
+Email
+Mobile no
+DOB
+Address
+City
+State
+Country
+Zip Code
+Gender
+Course type
+Course message
+
+Design:-
+
+Bgcolor:- Black
+Button color:-light green
+Font Color:- White

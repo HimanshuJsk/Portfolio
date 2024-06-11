@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>Sign up Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="passport.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+            //  function redirect() {
+            //     // Redirect to index.html after form submission
+            //     window.location.href = "index.html"; // Change "index.html" to the desired URL
+            // }
+            function validateform() {
+                var surname = document.myform.surname.value;
+                var fname = document.myform.fname.value;
+                var lname = document.myform.lname.value;
+                var email = document.myform.email.value;
+                var mno = document.myform.mno.value;
+                var dob = document.myform.dob.value;
+                var address = document.myform.address.value;
+                var city = document.myform.city.value;
+                var state = document.myform.state.value;
+                var country = document.myform.country.value;
+                var zcode = document.myform.zcode.value;
+                var gender = document.myform.gender.value;
+                var course = document.myform.course.value;
+                var cmessage = document.myform.cmessage.value;
+
+                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                var mobilePattern = /^[0-9]{10}$/;
+                var zipCodePattern = /^\d{6}$/;
+
+                if (surname == null || surname == "") {
+                    alert("Surname can't be blank");
+                    return false;
+                }
+                else if (fname == null || fname == "") {
+                    alert("First Name can't be blank");
+                    return false;
+                }
+                else if (lname == null || lname == "") {
+                    alert("Last Name can't be blank");
+                    return false;
+                }
+                else if (email == null || email == "") {
+                    alert("E-mail can't be blank");
+                    return false;
+                }
+                else if (!emailPattern.test(email)) {
+                    alert("Please enter a valid E-mail");
+                    return false;
+                }
+                else if (mno == null || mno == "") {
+                    alert("Mobile Number can't be blank");
+                    return false;
+                }
+                else if (!mobilePattern.test(mno)) {
+                    alert("Please enter a valid 10-digit mobile number");
+                    return false;
+                }
+                else if (dob == null || dob == "") {
+                    alert("Date of Birth can't be blank");
+                    return false;
+                }
+                else if (address == null || address == "") {
+                    alert("Address can't be blank");
+                    return false;
+                }
+                else if (city == "select") {
+                    alert("Please select a City");
+                    return false;
+                }
+                else if (state == "select") {
+                    alert("Please select a State");
+                    return false;
+                }
+                else if (country == "select") {
+                    alert("Please select a Country");
+                    return false;
+                }
+                else if (zcode == null || zcode == "") {
+                    alert("Zip Code can't be blank");
+                    return false;
+                }
+                else if (!zipCodePattern.test(zcode)) {
+                    alert("Please enter a valid 6-digit zip code");
+                    return false;
+                }
+                else if (!document.querySelector('input[name="gender"]:checked')) {
+                    alert("Please select a gender");
+                    return false;
+                }
+                else if (course == "select") {
+                    alert("Please select a Course");
+                    return false;
+                }
+                else if (cmessage == null || cmessage == "") {
+                    alert("Message can't be blank");
+                    return false;
+                }
+                
+                // redirect();
+                // return false;
+            }
+        </script>
+        <style>
+            #preloader{
+                background: #000 url(loader1.gif) no-repeat center center;
+                background-size:20%;
+                height:100vh;
+                width:100%;
+                position:fixed;
+                z-index: 100;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body{
+                overflow-x:hidden;
+                background-color: black;
+                /* transition: background-color 0.5s; */
+            }
+            .form-container {
+                position: relative;
+            }
+            .form-container video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 98%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            .form {
+                /* background-color: white; */
+                padding: 60px 20px 40px 20px;
+                border: 4px solid lightgreen;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="preloader">
+        </div>
+        <!--First Section Start-->
+        <section class="fsection" id="fsection" style="background-color:black; color:white; border:2px solid black; justify-content:center;">
+            <div class="form-container" style="position: absolute; top: 67%; left: 50%; transform: translate(-50%, -50%);">
+                <video autoplay muted loop>
+                    <source src="fback.mp4" type="video/mp4">
+                </video>
+                <form class="form justify-content-center" method="post" name="myform" action="https://script.google.com/macros/s/AKfycbzAo27rQh3Ck-ld1EeqJQ4VLHbgZetatUh4M4-zutQ8Q3eCNxZ2i5f3eALcDlDkIiAy/exec" onsubmit="return validateform()" style="">
+                    <h2 style="text-align: center;"><u>Sign up Form</u></h2>
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" class="" name="surname" placeholder="Surname">
+                    <input type="text" class="" name="fname" placeholder="First name">
+                    <input type="text" class="" name="lname" placeholder="Last name"><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="" name="email" placeholder="abc@gmail.com" style="width:574px;"><br><br>
+                    <label for="mno">Mobile no:</label>
+                    <input type="number" class="" name="mno" placeholder="00000 00000" style="width:545px;"><br><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" class="" name="dob" style="width:526px;"><br><br>
+                    <label for="address">Address:</label>
+                    <textarea type="text" class="" name="address" placeholder="Address" style="width:557px;"></textarea><br><br>
+                    <label for="city">City:</label>
+                    <select name="city" id="city">
+                        <option value="select">---SELECT CITY---</option>
+                        <option value="surat">Surat</option>
+                        <option value="ahemdabad">Ahemdabad</option>
+                        <option value="vadodara">Vadodara</option>
+                        <option value="gandhinagar">Gandhinagar</option>
+                        <option value="anand">Anand</option>
+                        <option value="navsari">Navsari</option>
+                        <option value="rajkot">Rajkot</option>
+                        <option value="bhavnagar">Bhavnagar</option>
+                        <option value="jamnagar">Jamnagar</option>
+                        <option value="junagadh">Junagadh</option>
+                    </select>
+                    <label for="state" style="padding-left: 10px;">State:</label>
+                    <select name="state" id="state">
+                        <option value="select">---SELECT STATE---</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="andhrapradesh">Andhra Pradesh</option>
+                        <option value="uttarpradesh">Uttar Pradesh</option>
+                        <option value="westbengal">West Bengal</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="maharashtra">Maharashtra</option>
+                    </select><br><br>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="select">---SELECT COUNTRY---</option>
+                        <option value="india">India</option>
+                        <option value="unitedstate">United State</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="china">China</option>
+                        <option value="germany">Germany</option>
+                        <option value="japan">Japan</option>
+                        <option value="unitedkingdom">United Kingdom</option>
+                        <option value="southkorea">South Korea</option>
+                        <option value="canada">Canada</option>
+                        <option value="israel">Israel</option>
+                    </select>
+                    <label for="zipcode" style="padding-left: 10px;">Zip Code:</label>
+                    <input type="number" class="" name="zcode" placeholder="000000"><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" class="" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" class="" name="gender">
+                    <label for="female">Female</label><br><br>
+                    <label for="course">Course:</label>
+                    <select name="course">
+                        <option value="select">---SELECT COURSE---</option>
+                        <option value="frontend">Front - End Developer</option>
+                        <option value="backend">Back - End Developer</option>
+                        <option value="fullstack">Full - Stack Developer</option>
+                        <option value="webdesigning">Web Designing</option>
+                        <option value="uiux">UI - UX Designing</option>
+                        <option value="ios">IOS Developer</option>
+                    </select><br><br>
+                    <label for="cmessage">Course Related Message:</label>
+                    <textarea type="text" class="" name="cmessage" placeholder="Course Related Message" style="width:440px;"></textarea><br><br>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="reset" name="reset" class="btn bg bg-danger" style="color:white; border:2px solid lightgreen; width:200px;">Reset</button>
+                        <button type="submit" name="submit" class="btn bg bg-success" style="color:white; border:2px solid white; width:200px;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--First Section End-->
+        <script>
+            // Preloader script
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

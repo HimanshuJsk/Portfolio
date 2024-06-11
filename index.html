@@ -1,0 +1,303 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="passport.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            #preloader{
+                background: #000 url(loader1.gif) no-repeat center center;
+                background-size:20%;
+                height:100vh;
+                width:100%;
+                position:fixed;
+                z-index: 100;
+            }
+            html {
+            scroll-behavior: smooth;
+            }
+            body{
+                overflow-x:hidden;
+                /* transition: background-color 0.5s; */
+            }
+            .toggle-btn button {
+                background-color: #4864ff; /* Change this to the desired color */
+                color: #fff; /* Change this to the desired text color */
+            }
+            .nav-item a:hover{
+                text-decoration: underline lightgreen;
+                /* color: orangered; */
+            }
+            .dropdown-item:hover{
+                color:black;
+                background-color:lightgreen;
+                transition: 0.5s;
+            }
+            #fname:hover{
+                text-decoration: underline lightgreen;
+            }
+            .navbar-nav-container {
+                margin-left: auto;
+            }
+            .footer:hover{
+                text-decoration:underline lightgreen;
+            }
+            .smedia:hover{
+                color:lightgreen;
+            }
+            .hover-effect:hover {
+                transform: rotate(-10deg); /* Rotate the image by 10 degrees on hover */
+                box-shadow: 0px 0px 10px 5px white; /* Add a shadow effect */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .mycv:hover{
+                text-decoration:underline;
+            }
+            .exp:hover{
+                border:2px solid lightgreen;
+            }
+            /* .progress-bar::after{
+                position: absolute;
+                content: attr(value);
+                top: -35px; 
+                right: 0;
+                color: black;
+                font-size: 9px;
+            }
+            .progress-line{
+                position:relative;
+                width:100%;
+                height:7px;
+                background-color:lightgreen;
+                border-radius:15px;
+                top:-1px;
+            } */
+            @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            }
+            @media only screen and (max-width: 991px) {
+                .sn {
+                    width:100px;
+                }
+            } 
+            @media only screen and (max-width: 458px) {
+                .hover-effect {
+                    justify-content:center;
+                    /* height:10px; */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="preloader">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+            <div class="container-fluid">
+                <a href="index.php"><img src="passport.jpg" alt="" style="height: 60px; border-radius: 50%;"
+                                        class="d-inline-block align-center"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse sn" id="navbarSupportedContent">
+                    <!-- Aligning this container to the right -->
+                    <ul class="navbar-nav navbar-nav-container">
+                        <li class="nav-item">
+                            <a class="nav-link  Active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" style="text-decoration:none;" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                    <i class="fa-solid fa-user fa-xl"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="registration.html" style="text-decoration:none; margin-right:20px;">
+                                        Signup
+                                        <!-- <i class="fa-regular fa-user-plus" style="color: #000000;"></i> -->
+                                    </a>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--First Section Start-->
+        <section class="bdetail" id="bdetail" style="background-color:black;">
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col" style="justify-content:center;">
+                    <div class="" style="margin-left:70px; margin-top:100px; margin-bottom:100px; justify-content:center;">
+                        <p style="font-size:25px; color:white;">I am Himanshu Parmar</p>
+                        <h1 style="color:lightgreen;">Web Developer + <br>Web Designer</h1>
+                        <p style="font-size:20px; color:white;">I am Currently a PHP / Laravel <br>Developer. To become a Web Developer <br>One should know Front-end language <br>and Back-end language. When Learning <br>a language, if we Stop learning, <br>we have Difficulty in learning the <br>language, so we should never take <br>a break.</p>
+                        <button type="submit" class="btn" id="openDocumentBtn" name="cv" style="width:170px; height:50px; margin-top:10px; background-color:black; color:white; border-radius:45%; border:2px solid lightgreen;">Seen CV <i class="fa-regular fa-eye" style="color: #ffffff;"></i></button>
+                        <div style="margin-top:30px; font-size:25px;">
+                        <a href="#" target="_blank" style="text-decoration:none; margin-right: 10px;">
+                            <i class="fa-brands fa-x-twitter" style="color: white;" onmouseover="this.style.color='lightgreen';" onmouseout="this.style.color='white';"></i>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration:none; margin-right: 10px;">
+                            <i class="fa-brands fa-linkedin" style="color: white;" onmouseover="this.style.color='lightgreen';" onmouseout="this.style.color='white';"></i>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration:none; margin-right: 10px;">
+                            <i class="fab fa-instagram fa-lg " style="color: white;" onmouseover="this.style.color='lightgreen';" onmouseout="this.style.color='white';"></i>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration:none; margin-right: 10px;">
+                            <i class="fa-brands fa-whatsapp" style="color: white;" onmouseover="this.style.color='lightgreen';" onmouseout="this.style.color='white';"></i>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="d-flex col justify-content-center" style="">
+                    <div class="img" style="margin-left:50px; margin-top:100px; margin-bottom:100px; justify-content:center;">
+                        <img src="passport.jpg" alt="firstimage" class="hover-effect" id="img" style="border:2px solid lightgreen; height:400px; width:400px; justify-content:center;">
+                    </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+        <!--First Section End-->
+        <!--Second section Start-->
+        <section class="rdetail" id="rdetail" style="background-color:black; border:2px solid black; animation-name: fadeIn; animation-duration: 1s; animation-timing-function: ease-in-out;">
+            <div class="" style="margin-top:70px; margin-bottom:70px; text-align:center;">
+                <h2 class="mycv" style="color:lightgreen;">My CV</h2>
+                <p class="cvdetail" style="color:white;">Friend's I am Currently a PHP Developer so I made this CV during Job Time <br>which Friend's can make by looking at this CV if they want to make CV. <br>Click on Download CV to View CV.</p>
+                <br>
+                <!-- <button type="submit" name="dcv" class="cvbtn" onclick="downloadCV()" style="font-size:20px; border-radius:40%; border:2px solid lightgreen; height:70px; width:270px;  background-color:black; color:lightgreen;">Download CV <i class="fa-solid fa-download" style="margin-left:5px; color: lightgreen;"></i></button> -->
+                <button type="button" name="dcv" class="cvbtn" onclick="downloadCV()" style="font-size:20px; border-radius:40%; border:2px solid lightgreen; height:70px; width:270px; background-color:black; color:lightgreen;">
+                    Download CV <i class="fa-solid fa-download" style="margin-left:5px; color: lightgreen;"></i>
+                </button>
+            </div>
+        </section>
+        <!--Second section End-->
+        <!--Third section Start-->
+        <section class="tsection" id="tsection" style="background-color:black; border:2px solid black; justify-content:center;">
+        <h2 style="margin-left:50px; margin-top:50px; color:lightgreen;">Experience</h2>
+        <div class="d-flex flex-column bd-highlight exp" style="border-radius:5px; margin-bottom:50px; margin-left:50px; margin-right:50px; background-color:white;">
+            <div class="p-2 bd-highlight">
+                <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">1. Website</h3>
+                <p style="color:black; font-size:20px;">Project Name: Krishna Sales & Service</p>
+                <p style="color:black; font-size:18px;">Technology: HTML, CSS, Bootstrap, Angular js, Javascript, Jquery</p>
+                <p style="color:black; font-size:18px;">Year: 2022 - 2023</p>
+                <p style="color:black; font-size:15px;">I Created Krishna Sales & Service Website in 2022. From This Website User can seen Information & Image of Waterfilter, Gas gehser & Gharghanti & if User wants to Buy <br>Waterfilter, Gas gehser & Gharghanti Then Fill Contact form & Contact Krishna Sales and Service.</p>
+                <p style="color:blue; font-size:18px;"><a href="https://krishnasales.vercel.app/" style="text-decoration:none; color:blue;">Visit the website <i class="fa-sharp fa-regular fa-paper-plane" style="color: blue;"></i></a></p>
+            </div>
+        </div>
+        <div class="d-flex flex-column bd-highlight exp" style="border-radius:5px; margin: 50px 50px 50px 50px; background-color:white;">
+            <div class="p-2 bd-highlight">
+                <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">2. E-commerce Website</h3>
+                <p style="color:black; font-size:20px;">Project Name: Health & Fitness Website</p>
+                <p style="color:black; font-size:20px;">Shop Name: Marcos Fitness</p>
+                <p style="color:black; font-size:18px;">Technology: HTML, CSS, Bootstrap, Javascript, PHP, Mysql</p>
+                <p style="color:black; font-size:18px;">Year: 2023 - 2024</p>
+                <p style="color:black; font-size:15px;">I Created The Website of Marcos fitness in 2023. Members can Purchase Memberships & Products from This Website. Registration & Login is Mandatory for The Member <br>to take The Membership only after That The Member can take The Membership of 3 Months, 6 Months & 12 Months and can Buy The Product & if The Member wants <br>any More Details Then he can Fill The Contact form of Marcos Fitness & Marcos Fitness Can Contact on The Contact number of Fitness.</p>
+            </div>
+        </div>
+        <h2 style="margin-left:50px; margin-top:50px; color:lightgreen;">Education</h2>
+        <div class="d-flex flex-column bd-highlight exp" style="border-radius:5px; margin-bottom:50px; margin-left:50px; margin-right:50px; background-color:white;">
+            <div class="p-2 bd-highlight">
+                <!-- <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">1. Website</h3> -->
+                <p style="color:green; font-size:20px;">2022 - 2024</p>
+                <p style="color:black; font-size:20px; font-family: 'Times New Roman', Times, serif;">BCA - Bachelor of Computer Application</p>
+                <p style="color:black; font-size:15px;"><a href="https://sugc.co.in/" style="text-decoration:none; color:black;">SHREE UTTAR GUJARAT BBA & BCA COLLEGE</a></p>
+            </div>
+        </div>
+        </section>
+        <!--Third section End-->
+        <!--Fourth section start-->
+        <section class="fdetail" id="fdetail" style="background-color:black; border:2px solid black;">
+            <div class="" style="margin-top:70px; margin-bottom:70px; text-align:center;">
+                    <h2 class="skills" style="color:lightgreen; cursor:pointer;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Skills</h2>
+                    <div class="flex-container skills-container" style="justify-content:center;  display:flex; flex-wrap:nowrap; background-color:black;">
+                        <div class="inner" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="html.png" width="90px;" height="110px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; padding-bottom:40px;">94%</p>
+                            <!-- <div class="progress-bar" style="position:relative; width:165px; height:5px; background-color:white; border-radius: 15px; justify-content:center; margin-left:15px; margin-top:20px;" value="94%">
+                                <div class="progress-line" style="max-width:94%">
+                                </div>  
+                            </div> -->
+                            <!-- <p style=" color:lightgreen;">94%</p> -->
+                        </div>
+                        <div class="inner skill" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="css.png" width="90px;" height="110px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; padding-bottom:40px;">83%</p>
+                            <!-- <div class="progress-bar" style="position:relative; width:165px; height:5px; background-color:white; border-radius: 15px; justify-content:center; margin-left:15px; margin-top:20px;" value="83%">
+                                <div class="progress-line" style="max-width:83%"></div>
+                            </div> -->
+                        </div>
+                        <div class="inner skill" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="js.png" width="90px;" height="110px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; padding-bottom:40px;">60%</p>
+                            <!-- <div class="progress-bar" style="position:relative; width:165px; height:5px; background-color:white; border-radius: 15px; justify-content:center; margin-left:15px; margin-top:20px;" value="60%">
+                                <div class="progress-line" style="max-width:60%"></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="flex-container skills-container" style="justify-content:center; display:flex; flex-wrap:nowrap; background-color:black;">
+                        <div class="inner skill" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="angularjs.png" width="90px;" height="110px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; padding-bottom:40px;">50%</p>
+                        </div>
+                        <div class="inner skill" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="php.png" width="130px;" height="90px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; margin-top:20px;">95%</p>
+                        </div>
+                        <div class="inner skill" style="background-color:black; width:200px; height:180px; margin:20px; line-height:75px; border:2px solid lightgreen;">
+                            <center><img src="mysql.png" width="90px;" height="110px;" style="margin-top:15px;"></center>
+                            <p style="color:lightgreen; padding-bottom:40px;">90%</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!--Fourth section end-->
+        <footer style="border:2px solid white;">
+            <p style="color:white; text-align: center; background-color: black; padding: 15px 0;">&copy; Copyright
+        2024 <a href="index.php" class="footer" style="color: white;">Himanshu Parmar</a></p>
+        </footer> 
+        <script>
+            // Preloader script
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            });
+        
+            // Open CV in a new tab script
+            document.getElementById("openDocumentBtn").addEventListener("click", function() {
+                var documentUrl = 'CV.pdf';
+                window.open(documentUrl, '_blank');
+            });
+        
+            // Download CV script
+            function downloadCV() {
+                var downloadUrl = 'CV.pdf'; // Path to the file you want to download
+                var anchor = document.createElement('a');
+                anchor.href = downloadUrl;
+                anchor.download = 'Himanshu_Parmar_CV.pdf'; // Filename for the downloaded file
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+            }
+        </script>
+        <!--Download CV-->
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
