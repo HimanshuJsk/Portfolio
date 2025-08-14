@@ -58,6 +58,13 @@
             .exp:hover{
                 border:2px solid #05ff01;
             }
+			.hover-effect{
+				display: block;
+				transition: transform 0.3s ease-in-out;
+			}
+			.hover-effect:hover {
+				animation: bob 1s ease-in-out infinite;
+			}
             /* .progress-bar::after{
                 position: absolute;
                 content: attr(value);
@@ -74,6 +81,14 @@
                 border-radius:15px;
                 top:-1px;
             } */
+			@keyframes bob {
+			  0%, 100% {
+			    transform: translateY(0);
+			  }
+			  50% {
+			    transform: translateY(-8px);
+			  }
+			}
             @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -353,6 +368,7 @@
             }
         </script>
 </html>
+
 
 
 
