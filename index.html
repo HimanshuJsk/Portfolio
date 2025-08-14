@@ -58,6 +58,12 @@
             .exp:hover{
                 border:2px solid #05ff01;
             }
+			.content-wrapper {
+		        margin: 0 auto;
+		        text-align: center;
+		        padding-left: 0;
+		        padding-right: 0;
+		    }
             /* .progress-bar::after{
                 position: absolute;
                 content: attr(value);
@@ -86,7 +92,45 @@
                 .sn {
                     width:100px;
                 }
+				.content-wrapper {
+		            padding-left: 40px;
+		            padding-right: 40px;
+		        }
+		        .hover-effect {
+		            height: auto;
+		            width: 80%;
+		            max-width: 300px;
+		        }
+		        .skills-container {
+		            flex-wrap: wrap !important;
+		        }
+		        .skills-container .inner {
+		            width: 150px !important;
+		            height: 160px !important;
+		        }
             } 
+			@media (max-width: 576px) {
+		        .content-wrapper {
+		            padding-left: 30px;
+		            padding-right: 30px;
+		        }
+		        .hover-effect {
+		            width: 100%;
+		            max-width: 250px;
+		        }
+		        .skills-container {
+		            flex-wrap: wrap !important;
+		        }
+		        .skills-container .inner {
+		            width: 140px !important;
+		            height: 150px !important;
+		        }
+		        .img img {
+		            height: auto;
+		            width: 100%;
+		            max-width: 250px;
+		        }
+		    }
             @media only screen and (max-width: 460px) {
                 .hover-effect {
                     height:100px;
@@ -144,7 +188,7 @@
             </div>
         </nav>
         <!--First Section Start-->
-        <section class="bdetail" id="bdetail" style="background-color:black;">
+        <section class="bdetail content-wrapper" id="bdetail" style="background-color:black;">
             <!-- <div class="container"> -->
                 <div class="row">
                     <div class="col" style="justify-content:center;">
@@ -179,7 +223,7 @@
         </section>
         <!--First Section End-->
         <!--Second section Start-->
-        <section class="rdetail" id="rdetail" style="background-color:black; border:2px solid black; animation-name: fadeIn; animation-duration: 1s; animation-timing-function: ease-in-out;">
+        <section class="rdetail content-wrapper" id="rdetail" style="background-color:black; border:2px solid black; animation-name: fadeIn; animation-duration: 1s; animation-timing-function: ease-in-out;">
             <div class="" style="margin-top:70px; margin-bottom:70px; text-align:center;">
                 <h2 class="mycv" style="color:#05ff01;">My CV</h2>
                 <p class="cvdetail" style="color:white;">Friend's I am Currently a PHP Developer so I made this CV during Job Time <br>which Friend's can make by looking at this CV if they want to make CV. <br>Click on Download CV to View CV.</p>
@@ -192,7 +236,7 @@
         </section>
         <!--Second section End-->
         <!--Third section Start-->
-        <section class="tsection" id="tsection" style="background-color:black; border:2px solid black; justify-content:center;">
+        <section class="tsection content-wrapper" id="tsection" style="background-color:black; border:2px solid black; justify-content:center;">
         <h2 style="margin-left:50px; margin-top:50px; color:#05ff01;">Project</h2>
         <div class="d-flex flex-column bd-highlight exp" style="border-radius:5px; margin-bottom:50px; margin-left:50px; margin-right:50px; background-color:white;">
             <div class="p-2 bd-highlight">
@@ -226,7 +270,7 @@
         </section>
         <!--Third section End-->
         <!--Fourth section start-->
-        <section class="fdetail" id="fdetail" style="background-color:black; border:2px solid black;">
+        <section class="fdetail content-wrapper" id="fdetail" style="background-color:black; border:2px solid black;">
             <div class="" style="margin-top:70px; margin-bottom:70px; text-align:center;">
                     <h2 class="skills" style="color:#05ff01; cursor:pointer;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Skills</h2>
                     <div class="flex-container skills-container" style="justify-content:center;  display:flex; flex-wrap:nowrap; background-color:black;">
@@ -301,16 +345,3 @@
             }
         </script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
