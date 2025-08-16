@@ -20,11 +20,15 @@
 	    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous" defer></script>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-			@font-face {
-			  font-family: 'MyFont';
-			  src: url('/fonts/myfont.woff2') format('woff2');
-			  font-display: swap;
-			}
+			/* override font-face */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;  /* 👈 Added */
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2') format('woff2');
+}
+
 			#preloader {
 			    background: #000 url("loader1.gif") no-repeat center center;
 			    background-size: 20%;
@@ -416,6 +420,7 @@
             }
         </script>
 </html>
+
 
 
 
