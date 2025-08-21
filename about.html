@@ -57,11 +57,64 @@
         .custom-card:hover {
             box-shadow: 0 0 15px #05ff01; 
         }
-        @media (min-width: 570px) and (max-width: 1400px) {
+        @media only screen and (max-width: 991px) {
+                .sn {
+                    width:100px;
+                }
+				.content-wrapper {
+		            padding-left: 40px;
+		            padding-right: 40px;
+		        }
+				
+		        .hover-effect {
+		            height: auto;
+		            width: 80%;
+		            max-width: 300px;
+		        }
+            } 
+			@media (max-width: 576px) {
+		        .content-wrapper {
+		            padding-left: 20px;
+		            padding-right: 20px;
+		        }
+				.mobile-hide-break{
+					display: none;
+				}
+		        .hover-effect {
+		            width: 100%;
+		            max-width: 250px;
+		        }
+				.sdetail .hover-effect{
+					margin-top:10px !important;
+					margin-bottom:10px !important;
+				}
+				.sdetail .col > div,
+			    .sdetail .hover-effect{
+			        margin-left: 0 !important;
+			        margin-right: 0 !important;
+					margin-top:40px !important;
+					margin-bottom:10px !important;
+					text-align:center;
+					justify-content:center;
+			    }
+		    }
+            @media only screen and (max-width: 460px) {
+                .hover-effect {
+                    height:100px;
+                    width:100px;
+                }
+            }
+            @media only screen and (max-width: 458px) {
+                .hover-effect {
+                    justify-content:center;
+                    /* height:10px; */
+                }
+            }
+/*         @media (min-width: 570px) and (max-width: 1400px) {
             .custom-card {
                 margin: 20px;
             }
-        }
+        } */
     </style>
 </head>
 <body>
@@ -185,6 +238,7 @@
         });
     </script>
 </html>
+
 
 
 
