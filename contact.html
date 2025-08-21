@@ -143,6 +143,69 @@
             background: white;
             color: #FF0000;
         }
+        /* Tablet & small laptop (up to 991px) */
+@media only screen and (max-width: 991px) {
+    .sn {
+        width: 100%;
+    }
+    .contact-card {
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Mobile (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .contact-card {
+        padding: 15px;
+        margin: 10px;
+    }
+    .contact-card h3, 
+    .contact-card p {
+        text-align: center;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-icons li {
+        margin: 8px;
+        width: 45px;
+        height: 45px;
+    }
+    .social-icons li i {
+        font-size: 20px;
+    }
+}
+
+/* Extra small (up to 460px) */
+@media only screen and (max-width: 460px) {
+    .contact-card {
+        padding: 10px;
+    }
+    .social-icons li {
+        width: 40px;
+        height: 40px;
+    }
+    .social-icons li i {
+        font-size: 18px;
+    }
+}
+
+/* Ultra small devices (up to 400px) */
+@media only screen and (max-width: 400px) {
+    .contact-card h3 {
+        font-size: 18px;
+    }
+    .contact-card p {
+        font-size: 16px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -253,6 +316,7 @@
         });
     </script>
 </html>
+
 
 
 
