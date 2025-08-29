@@ -137,7 +137,7 @@
 
 /* Mobile (up to 576px) */
 @media only screen and (max-width: 576px) {
-    .contact-card {
+/*     .contact-card {
         padding: 15px;
         margin: 10px;
     }
@@ -147,12 +147,12 @@
     }
     .social-icons {
         display: flex;
-        justify-content: center;   /* ✅ center horizontally */
-        align-items: center;       /* ✅ center vertically (if height set) */
+        justify-content: center;   
+        align-items: center;     
         flex-wrap: wrap;
-        width: 100%;               /* ✅ parent width cover karse */
+        width: 100%;              
         padding: 0;
-        margin: 15px auto 0 auto;  /* ✅ top margin + auto center */
+        margin: 15px auto 0 auto;  
     }
 
     .social-icons li {
@@ -162,7 +162,7 @@
         height: 45px;
         border-radius: 50%;
         background: #fff;
-        display: flex;             /* ✅ icon circle andar perfect center */
+        display: flex;            
         justify-content: center;
         align-items: center;
     }
@@ -179,6 +179,51 @@
     .flex-container > div {
         width: 90%;
         height: auto;
+        margin: 10px 0;
+    } */
+	.contact-card {
+        padding: 15px;
+        margin: 10px auto;          /* ✅ auto margin to center card */
+        text-align: center;         /* ✅ text + headings center */
+    }
+
+    .contact-card h3, 
+    .contact-card p {
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;   /* ✅ horizontal center */
+        align-items: center;       /* ✅ vertical center if needed */
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 15px auto 0 auto;
+        padding: 0;
+    }
+
+    .social-icons li {
+        margin: 8px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons li i {
+        font-size: 20px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;         /* ✅ overall content center */
+    }
+
+    .flex-container > div {
+        width: 90%;
         margin: 10px 0;
     }
 }
@@ -307,6 +352,7 @@
         });
     </script>
 </html>
+
 
 
 
