@@ -146,19 +146,19 @@
         text-align: center;
     }
     .social-icons {
-        display: flex;             /* 👈 flex banavyo */
+        display: flex;
+        justify-content: center;   /* ✅ icons center ma avse */
+        align-items: center;
         flex-wrap: wrap;
-        justify-content: center;   /* 👈 horizontally center */
-        align-items: center;       /* 👈 vertically center */
         padding: 0;
-        margin: 15px auto;         /* 👈 pura ul ne center karse */
+        margin: 15px auto;
     }
 
     .social-icons li {
         margin: 8px;
         width: 45px;
         height: 45px;
-        display: flex;             /* 👈 icon exact center ma */
+        display: flex;             /* ✅ circle andar center */
         justify-content: center;
         align-items: center;
     }
@@ -241,7 +241,7 @@
                 <h3 style="color: #05ff01;" onmouseover="this.style.color='white';"
                 onmouseout="this.style.color='#05ff01';">Mobile no</h3>
                 <p style="font-size: 20px;">+91 1234567890</p><br>
-                <ul class="social-icons">
+<!--                 <ul class="social-icons">
                     <li class="flex">
                         <a href="#" style="color:black;">
                             <i class="fa-brands fa-whatsapp fa-2x" style="margin-left: 10px; margin-top: 10px;"></i>
@@ -262,7 +262,29 @@
                             <i class="fa-brands fa-youtube fa-2x" style="margin-left: 10px; margin-top: 10px;"></i>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
+					<ul class="social-icons">
+    <li>
+        <a href="#" style="color:black;">
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#" style="color:black;">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#" style="color:black;">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#" style="color:black;">
+            <i class="fa-brands fa-youtube fa-2x"></i>
+        </a>
+    </li>
+</ul>
             </div>
             </div>
         </div>
@@ -280,4 +302,5 @@
         });
     </script>
 </html>
+
 
