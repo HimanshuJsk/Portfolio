@@ -147,24 +147,29 @@
     }
     .social-icons {
         display: flex;
-        justify-content: center;   /* ✅ icons center ma avse */
-        align-items: center;
+        justify-content: center;   /* ✅ center horizontally */
+        align-items: center;       /* ✅ center vertically (if height set) */
         flex-wrap: wrap;
+        width: 100%;               /* ✅ parent width cover karse */
         padding: 0;
-        margin: 15px auto;
+        margin: 15px auto 0 auto;  /* ✅ top margin + auto center */
     }
 
     .social-icons li {
+        list-style: none;
         margin: 8px;
         width: 45px;
         height: 45px;
-        display: flex;             /* ✅ circle andar center */
+        border-radius: 50%;
+        background: #fff;
+        display: flex;             /* ✅ icon circle andar perfect center */
         justify-content: center;
         align-items: center;
     }
 
     .social-icons li i {
         font-size: 20px;
+        line-height: 1;
     }
 	.flex-container {
         flex-direction: column;
@@ -302,5 +307,6 @@
         });
     </script>
 </html>
+
 
 
