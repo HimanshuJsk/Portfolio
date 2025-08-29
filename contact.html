@@ -16,37 +16,6 @@
 		  gtag('js', new Date());
 		  gtag('config', 'G-FQBXHB3ETK');
 		</script>
-    <!--     <script>
-        function validateform() {
-            var fname = document.myform.fname.value;
-            var femail = document.myform.femail.value;
-            var fsubject = document.myform.fsubject.value;
-            var fmessage = document.myform.fmessage.value;
-
-            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
-            if (fname == null || fname == "") {
-                alert("Name can't be blank");
-                return false;
-            }
-            else if (femail == null || femail == "") {
-                alert("E-mail can't be blank");
-                return false;
-            }
-            else if (!emailPattern.test(femail)) {
-                    alert("Please enter a valid E-mail");
-                    return false;
-            }
-            else if (fsubject == "selectsubject") {
-                alert("Please select a Subject");
-                return false;
-            }
-            else if (fmessage == null || fmessage == "") {
-                alert("Message can't be blank");
-                return false;
-            }
-        }
-    </script> -->
     <style>
         #preloader {
             background: #000 url(loader1.gif) no-repeat center center;
@@ -188,6 +157,16 @@
     .social-icons li i {
         font-size: 20px;
     }
+	.flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-container > div {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
 }
 
 /* Extra small (up to 460px) */
@@ -277,38 +256,6 @@
                 </ul>
             </div>
             </div>
-<!--             <div>
-                <div class="form-container">
-                    <form class="cform" name="myform" method="post"
-                        action="https://script.google.com/macros/s/AKfycbw4YaPse4uuxy8kbZp8i8zvnULyvYPL4HcJ6al6XN8KtF-hzSS2OPCAeQw2THBn_TTE/exec"
-                        onsubmit="return validateform()">
-                        <h2 style="text-align: center;"><u>Contact us</u></h2>
-                        <br>
-                        Name:
-                        <input type="text" placeholder="Name" name="fname" style="width: 85%;">
-                        <br><br>
-                        E-mail:
-                        <input type="email" placeholder="E-mail" name="femail" style="width: 85%;">
-                        <br><br>
-                        Choose a Subject:
-                        <select name="fsubject">
-                            <option value="selectsubject">--Select Subject--</option>
-                            <option value="uiuxdesigner">UI-UX Designer</option>
-                            <option value="Front-End Developer">Front-End Developer</option>
-                            <option value="Back-End Developer">Back-End Developer</option>
-                            <option value="Full-Stack Developer">Full-Stack Developer</option>
-                        </select>
-                        <br><br>
-                        Enter Your Message:
-                        <textarea type="text" placeholder="Message" name="fmessage" style="width: 62%;"></textarea>
-                        <br><br>
-                        <div class="text-center">
-                            <button class="btn btn-danger" type="reset" value="reset" style="width: 40%;">Reset</button>
-                            <button class="btn btn-primary" id="submitBtn" type="submit" value="submit" style="width: 40%;">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div> -->
         </div>
     </section>
     <!--First Section End-->
@@ -324,13 +271,3 @@
         });
     </script>
 </html>
-
-
-
-
-
-
-
-
-
-
