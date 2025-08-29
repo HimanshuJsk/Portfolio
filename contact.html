@@ -146,14 +146,23 @@
         text-align: center;
     }
     .social-icons {
+        display: flex;             /* 👈 flex banavyo */
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: center;   /* 👈 horizontally center */
+        align-items: center;       /* 👈 vertically center */
+        padding: 0;
+        margin: 15px auto;         /* 👈 pura ul ne center karse */
     }
+
     .social-icons li {
         margin: 8px;
         width: 45px;
         height: 45px;
+        display: flex;             /* 👈 icon exact center ma */
+        justify-content: center;
+        align-items: center;
     }
+
     .social-icons li i {
         font-size: 20px;
     }
@@ -271,3 +280,4 @@
         });
     </script>
 </html>
+
