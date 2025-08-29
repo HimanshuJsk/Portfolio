@@ -183,27 +183,26 @@
     } */
 	.contact-card {
         padding: 15px;
-        margin: 10px auto;          /* ✅ auto margin to center card */
-        text-align: center;         /* ✅ text + headings center */
-    }
-
-    .contact-card h3, 
-    .contact-card p {
+        margin: 10px auto;      /* ✅ auto → equal space both sides */
         text-align: center;
+        width: 90%;             /* ✅ responsive width */
+        max-width: 400px;       /* ✅ avoid too wide */
+        box-sizing: border-box; /* ✅ padding included */
     }
 
     .social-icons {
         display: flex;
-        justify-content: center;   /* ✅ horizontal center */
-        align-items: center;       /* ✅ vertical center if needed */
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        width: 100%;
+        gap: 12px;              /* ✅ equal spacing between icons */
         margin: 15px auto 0 auto;
         padding: 0;
     }
 
     .social-icons li {
-        margin: 8px;
+        list-style: none;
+        margin: 0;
         width: 45px;
         height: 45px;
         display: flex;
@@ -211,19 +210,14 @@
         align-items: center;
     }
 
-    .social-icons li i {
-        font-size: 20px;
-    }
-
     .flex-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;         /* ✅ overall content center */
     }
 
     .flex-container > div {
-        width: 90%;
+        width: 100%;
         margin: 10px 0;
     }
 }
@@ -352,6 +346,7 @@
         });
     </script>
 </html>
+
 
 
 
